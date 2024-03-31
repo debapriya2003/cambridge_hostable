@@ -19,20 +19,37 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @livewireStyles
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
 </head>
 
 <body>
     <div id="alert" class="affix-top">
         @include('frontend.includes.header')
     </div>
+
     <main id="main">
         @yield('content')
     </main>
 
-    @include('frontend.includes.footer')
+    {{-- <footer>
+        @include('frontend.includes.footer')
+    </footer> --}}
 
     @yield('script')
-    {{-- @vite(['resources/js/app.js']) --}}
     @livewireScripts
 </body>
 

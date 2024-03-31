@@ -44,6 +44,15 @@
                              </li>
                              <li><a href="#">Facilities</a></li>
                              <li><a href="{{route('frontend.contact_us')}}">Contact Us</a></li>
+                             <li><a href="#">Quick Links <i class="fas fa-angle-down"></i></a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Diksha Government of India</a></li>
+                                    <li><a href="#">NCERT E-Books of Class 1 to 12</a></li>
+                                    <li><a href="#">E-Pathshala</a></li>
+                                    <li><a href="#">Swayam Prabha free DTH Channel for Education</a></li>
+                                    <li><a href="#">Study Material</a></li>
+                                </ul>
+                            </li>
                          </ul>
                      </div>
                  </nav>

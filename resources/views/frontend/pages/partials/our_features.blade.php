@@ -7,7 +7,7 @@
                    style="visibility: visible; animation-delay:0.4s; animation-name:fadeInUp;">
                    <div class="single-feature">
                        <div class="feature-head">
-                           <img src="/images/science.jpg" alt="#" class="w-25">
+                           <img src="{{Vite::asset('resources/images/th.jpg')}}" alt="#" class="w-25">
                        </div>
                        <h2 class="text-dark">Science Lab</h2>
                        <p class="text-dark">
@@ -22,7 +22,7 @@
                    style="visibility: visible; animation-delay:0.4s; animation-name:fadeInUp;">
                    <div class="single-feature">
                        <div class="feature-head">
-                           <img src="/images/computer.jpg" alt="#" class="w-25">
+                           <img src="{{Vite::asset('resources/images/download.jpg')}}" alt="#" class="w-25">
                        </div>
                        <h2 class="text-dark">Computer Lab</h2>
                        <p class="text-dark">
@@ -37,7 +37,7 @@
                    style="visibility: visible; animation-delay:0.4s; animation-name:fadeInUp;">
                    <div class="single-feature">
                        <div class="feature-head">
-                           <img src="/images/sports.jpg" alt="#" class="w-25">
+                           <img src="{{Vite::asset('resources/images/comp.jpg')}}" alt="#" class="w-25">
                        </div>
                        <h2 class="text-dark">Sports</h2>
                        <p class="text-dark">
@@ -51,3 +51,5 @@
            </div>
        </div>
    </section>
+
+   <div >made by ishisoft pvt ltd</div>

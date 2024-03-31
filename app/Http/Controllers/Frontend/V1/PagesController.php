@@ -1,15 +1,20 @@
 <?php
 
 namespace App\Http\Controllers\Frontend\V1;
-
+use App\Models\TopRanker;
+use App\Models\News;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
     public function index()
-    {
-        return view('frontend.pages.index');
+    {   
+        $topRankers = TopRanker::all(); // Retrieve all top rankers from the database
+        //return view('frontend.pages.index', compact('topRankers'));
+        
+        $news = News::published()->orderBy('created_at', 'desc')->get();
+        return view('frontend.pages.index', compact('news', 'topRankers'));
     }
 
     public function contactUs()

@@ -3,7 +3,8 @@
 @section('content')
     <section class="home-slider">
         <div class="hero-slider owl-carousel owl-theme">
-            <div class="single-slider" style="background-image: url({{Vite::asset('resources/images/IMG-20240201-WA0051.jpg')}});">
+            <div class="single-slider"
+                style="background-image: url({{ Vite::asset('resources/images/IMG-20240201-WA0051.jpg') }});">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
@@ -16,7 +17,8 @@
                 </div>
             </div>
 
-            <div class="single-slider" style="background-image: url({{Vite::asset('resources/images/IMG-20240201-WA0119.jpg')}});">
+            <div class="single-slider"
+                style="background-image: url({{ Vite::asset('resources/images/IMG-20240201-WA0119.jpg') }});">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
@@ -29,7 +31,8 @@
                 </div>
             </div>
 
-            <div class="single-slider" style="background-image: url({{Vite::asset('resources/images/IMG-20231114-WA0011.jpg')}});">
+            <div class="single-slider"
+                style="background-image: url({{ Vite::asset('resources/images/IMG-20231114-WA0011.jpg') }});">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
@@ -41,7 +44,8 @@
                     </div>
                 </div>
             </div>
-            <div class="single-slider" style="background-image: url({{Vite::asset('resources/images/IMG-20231114-WA0011.jpg')}});">
+            <div class="single-slider"
+                style="background-image: url({{ Vite::asset('resources/images/IMG-20231114-WA0011.jpg') }});">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
@@ -53,7 +57,8 @@
                     </div>
                 </div>
             </div>
-            <div class="single-slider" style="background-image: url({{Vite::asset('resources/images/IMG-20240126-WA0039.jpg')}});">
+            <div class="single-slider"
+                style="background-image: url({{ Vite::asset('resources/images/IMG-20240126-WA0039.jpg') }});">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
@@ -65,7 +70,8 @@
                     </div>
                 </div>
             </div>
-            <div class="single-slider" style="background-image: url({{Vite::asset('resources/images/IMG-20240123-WA0016.jpg')}});">
+            <div class="single-slider"
+                style="background-image: url({{ Vite::asset('resources/images/IMG-20240123-WA0016.jpg') }});">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
@@ -77,7 +83,8 @@
                     </div>
                 </div>
             </div>
-            <div class="single-slider" style="background-image: url({{Vite::asset('resources/images/IMG-20240123-WA0016.jpg')}});">
+            <div class="single-slider"
+                style="background-image: url({{ Vite::asset('resources/images/IMG-20240123-WA0016.jpg') }});">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
@@ -89,7 +96,8 @@
                     </div>
                 </div>
             </div>
-            <div class="single-slider" style="background-image: url({{Vite::asset('resources/images/IMG-20240123-WA0016.jpg')}});">
+            <div class="single-slider"
+                style="background-image: url({{ Vite::asset('resources/images/IMG-20240123-WA0016.jpg') }});">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
@@ -142,7 +150,7 @@
                     </div>
                     <div class="col-lg-3 float-start mb-4 p-2">
                         <div class="single-blog-inner-img text-center">
-                            <img src="/images/principal0.jpg" alt="#" class="img-thumbnail">
+                            <img src="{{ Vite::asset('resources/images/man1.jpg') }}" alt="#" class="img-thumbnail">
                             <h6 class="pt-2">Mr. Vikash Singh</h6>
                             <p>-</p>
                         </div>
@@ -175,32 +183,22 @@
                                                 style="font-size: 13px; color: #676767;">
                                                 <ul class="news_slide_wrap"
                                                     style="display: inline-block;text-align:justify;padding-inline-start:15px;">
-                                                    <li class="slide_content_loop">
-                                                        <div class="slide_content_wrap">
-                                                            <div class="slider_news_title">
-                                                                <a href="#"
-                                                                    style="padding: 0px; font-size:15px; font-family:'Courier New', Courier, monospace;
+                                                    @foreach ($news as $NewsItem)
+                                                        <li class="slide_content_loop">
+                                                            <div class="slide_content_wrap">
+                                                                <div class="slider_news_title">
+                                                                    <a href="#"
+                                                                        style="padding: 0px; font-size:15px; font-family:'Courier New', Courier, monospace;
                                     color:#e41f05; text-align: justify; line-height: 28px; text-align: left;">
-                                                                    <span id="RepeaterNews_lbNews_0">Lorem, ipsum
-                                                                        dolor sit amet consectetur adipisicing elit.
-                                                                        Atque, consectetur.</span>
-                                                                </a>
-                                                            </div>
-                                                            <br>
-                                                    </li>
-                                                    <li class="slide_content_loop">
-                                                        <div class="slide_content_wrap">
-                                                            <div class="slider_news_title">
-                                                                <a href="#"
-                                                                    style="padding: 0px; font-size:15px; font-family:'Courier New', Courier, monospace;
-                                    color:#e41f05; text-align: justify; line-height: 28px; text-align: left;">
-                                                                    <span id="RepeaterNews_lbNews_0">Lorem, ipsum
-                                                                        dolor sit amet consectetur adipisicing elit.
-                                                                        Atque, consectetur.</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                                        <span
+                                                                            id="RepeaterNews_lbNews_0">{{ $NewsItem->title }}</span>
+                                                                        <span
+                                                                            id="RepeaterNews_lbNews_0">{{ $NewsItem->pdf }}</span>
+                                                                    </a>
+                                                                </div>
+                                                                <br>
+                                                        </li>
+                                                    @endforeach
                                                 </ul>
                                             </marquee>
                                         </div>
@@ -220,268 +218,44 @@
                             <hr style="height:10px; color:red;">
                             <h2 style="color: red;">Our Top <span>Rankers</span></h2>
                         </div>
+
                         <div class="testimonial-slider owl-carousel owl-theme">
-                            <div class="single-testimonial">
-                                <div class="course-head text-center bg-white">
-                                    <img src="/images/student1.jpg" alt="#" class="w-50 mx-auto img-thumbnail">
-                                </div>
-                                <div class="main-content">
-                                    <table class="table table-bordered bg-white">
-                                        <tr class="bg-primary text-white text-center">
-                                            <th colspan="2">Bharti</th>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Class</strong></td>
-                                            <td><strong>Intermediate</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Section</strong></td>
-                                            <td><strong>A</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Percentage</strong></td>
-                                            <td><strong>-</strong></td>
-                                        </tr>
-                                        <td><strong>Year</strong></td>
-                                        <td><strong>-</strong></td>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="course-head text-center bg-white">
-                                    <img src="/images/student2.jpg" alt="#" class="w-50 mx-auto img-thumbnail">
-                                </div>
-                                <div class="main-content">
-                                    <table class="table table-bordered bg-white">
-                                        <tr class="bg-primary text-white text-center">
-                                            <th colspan="2">Anjali</th>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Class</strong></td>
-                                            <td><strong>Intermediate</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Section</strong></td>
-                                            <td><strong>A</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Percentage</strong></td>
-                                            <td><strong>-</strong></td>
-                                        </tr>
-                                        <td><strong>Year</strong></td>
-                                        <td><strong>-</strong></td>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="course-head text-center bg-white">
-                                    <img src="/images/student3.jpg" alt="#" class="w-50 mx-auto img-thumbnail">
-                                </div>
-                                <div class="main-content">
-                                    <table class="table table-bordered bg-white">
-                                        <tr class="bg-primary text-white text-center">
-                                            <th colspan="2">Neeraj</th>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Class</strong></td>
-                                            <td><strong>Intermediate</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Section</strong></td>
-                                            <td><strong>A</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Percentage</strong></td>
-                                            <td><strong>-</strong></td>
-                                        </tr>
-                                        <td><strong>Year</strong></td>
-                                        <td><strong>-</strong></td>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="course-head text-center bg-white">
-                                    <img src="/images/student4.jpg" alt="#" class="w-50 mx-auto img-thumbnail">
-                                </div>
-                                <div class="main-content">
-                                    <table class="table table-bordered bg-white">
-                                        <tr class="bg-primary text-white text-center">
-                                            <th colspan="2">Arti</th>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Class</strong></td>
-                                            <td><strong>Intermediate</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Section</strong></td>
-                                            <td><strong>A</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Percentage</strong></td>
-                                            <td><strong>-</strong></td>
-                                        </tr>
-                                        <td><strong>Year</strong></td>
-                                        <td><strong>-</strong></td>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="course-head text-center bg-white">
-                                    <img src="/images/student5.jpg" alt="#" class="w-50 mx-auto img-thumbnail">
-                                </div>
-                                <div class="main-content">
-                                    <table class="table table-bordered bg-white">
-                                        <tr class="bg-primary text-white text-center">
-                                            <th colspan="2">Sakshi</th>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Class</strong></td>
-                                            <td><strong>Intermediate</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Section</strong></td>
-                                            <td><strong>A</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Percentage</strong></td>
-                                            <td><strong>-</strong></td>
-                                        </tr>
-                                        <td><strong>Year</strong></td>
-                                        <td><strong>-</strong></td>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="course-head text-center bg-white">
-                                    <img src="/images/student6.jpg" alt="#" class="w-50 mx-auto img-thumbnail">
-                                </div>
-                                <div class="main-content">
-                                    <table class="table table-bordered bg-white">
-                                        <tr class="bg-primary text-white text-center">
-                                            <th colspan="2">Monika</th>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Class</strong></td>
-                                            <td><strong>Intermediate</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Section</strong></td>
-                                            <td><strong>A</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Percentage</strong></td>
-                                            <td><strong>-</strong></td>
-                                        </tr>
-                                        <td><strong>Year</strong></td>
-                                        <td><strong>-</strong></td>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="course-head text-center bg-white">
-                                    <img src="/images/student7.jpg" alt="#" class="w-50 mx-auto img-thumbnail">
-                                </div>
-                                <div class="main-content">
-                                    <table class="table table-bordered bg-white">
-                                        <tr class="bg-primary text-white text-center">
-                                            <th colspan="2">Priyanka</th>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Class</strong></td>
-                                            <td><strong>Intermediate</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Section</strong></td>
-                                            <td><strong>A</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Percentage</strong></td>
-                                            <td><strong>-</strong></td>
-                                        </tr>
-                                        <td><strong>Year</strong></td>
-                                        <td><strong>-</strong></td>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="course-head text-center bg-white">
-                                    <img src="/images/student8.jpg" alt="#" class="w-50 mx-auto img-thumbnail">
-                                </div>
-                                <div class="main-content">
-                                    <table class="table table-bordered bg-white">
-                                        <tr class="bg-primary text-white text-center">
-                                            <th colspan="2">Amit</th>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Class</strong></td>
-                                            <td><strong>Intermediate</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Section</strong></td>
-                                            <td><strong>A</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Percentage</strong></td>
-                                            <td><strong>-</strong></td>
-                                        </tr>
-                                        <td><strong>Year</strong></td>
-                                        <td><strong>-</strong></td>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="course-head text-center bg-white">
-                                    <img src="/images/student9.jpg" alt="#" class="w-50 mx-auto img-thumbnail">
-                                </div>
-                                <div class="main-content">
-                                    <table class="table table-bordered bg-white">
-                                        <tr class="bg-primary text-white text-center">
-                                            <th colspan="2">Abhishek</th>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Class</strong></td>
-                                            <td><strong>Intermediate</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Section</strong></td>
-                                            <td><strong>A</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Percentage</strong></td>
-                                            <td><strong>-</strong></td>
-                                        </tr>
-                                        <td><strong>Year</strong></td>
-                                        <td><strong>-</strong></td>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="course-head text-center bg-white">
-                                    <img src="/images/student10.jpg" alt="#" class="w-50 mx-auto img-thumbnail">
-                                </div>
-                                <div class="main-content">
-                                    <table class="table table-bordered bg-white">
-                                        <tr class="bg-primary text-white text-center">
-                                            <th colspan="2">Vikas</th>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Class</strong></td>
-                                            <td><strong>Intermediate</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Section</strong></td>
-                                            <td><strong>A</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Percentage</strong></td>
-                                            <td><strong>-</strong></td>
-                                        </tr>
-                                        <td><strong>Year</strong></td>
-                                        <td><strong>-</strong></td>
-                                    </table>
-                                </div>
-                            </div>
+                            @foreach ($topRankers as $top)
+                                <table class="table table-bordered bg-white">
+                                    <tr class="bg-primary text-white text-center">
+                                        <th class="course-head text-center bg-white">
+                                            @if (!empty($top->image))
+                                                <img src="{{ $top->photoUrl }}" id="photo_preview" width="200px"
+                                                    height="100px" />
+                                            @else
+                                                <b>No Photo Uploaded</b>
+                                            @endif
+                                        </th>
+                                        {{-- <table class="table table-bordered bg-white">
+                                <tr class="bg-primary text-white text-center"> --}}
+                                        <th colspan="2">{{ $top->name }}</th>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Class</strong></td>
+                                        <td><strong>{{ $top->class }}</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Section</strong></td>
+                                        <td><strong>{{ $top->section }}</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Percentage</strong></td>
+                                        <td><strong>{{ $top->percentage }}</strong></td>
+                                    </tr>
+                                    <td><strong>Year</strong></td>
+                                    <td><strong>{{ $top->year }}</strong></td>
+                                </table>
+                            @endforeach
+
+
+
                         </div>
+
                     </div>
                 </div>
             </div>
