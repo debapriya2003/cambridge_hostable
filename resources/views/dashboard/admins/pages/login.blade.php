@@ -13,7 +13,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <img src="{{ asset('images/logo.png')}}" alt="" class="img-fluid" >
+    <img src="{{Vite::asset('resources/images/cambridge_logo.png')}}" alt="" class="img-fluid" >
   </div>
   <!-- /.login-logo -->
   <div class="card">

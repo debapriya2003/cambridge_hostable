@@ -227,8 +227,6 @@
                                             @if (!empty($top->image))
                                                 <img src="{{ $top->photoUrl }}" id="photo_preview" width="200px"
                                                     height="100px" />
-                                            @else
-                                                <b>No Photo Uploaded</b>
                                             @endif
                                         </th>
                                         {{-- <table class="table table-bordered bg-white">

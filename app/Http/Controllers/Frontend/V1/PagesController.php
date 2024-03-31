@@ -10,7 +10,7 @@ class PagesController extends Controller
 {
     public function index()
     {   
-        $topRankers = TopRanker::all(); // Retrieve all top rankers from the database
+        $topRankers = TopRanker::display()->get(); // Retrieve all top rankers from the database
         //return view('frontend.pages.index', compact('topRankers'));
         
         $news = News::published()->orderBy('created_at', 'desc')->get();
