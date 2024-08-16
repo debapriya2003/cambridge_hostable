@@ -360,7 +360,7 @@
       </section>
       <footer style="background-color: #333; color: #fff; padding: 10px; text-align: center; bottom: 1px;">
         <a   >&copy; 2024 Cambridge High School. All rights reserved.</a>
-        <a  style="color: azure"   href="https://www.ishisoft.in/"> Made BY Ishosoft </a>
+        <a  style="color: azure"   href="https://www.ishisoft.in/"> Made BY Ishisoft </a>
       </footer>
         
     </section>
