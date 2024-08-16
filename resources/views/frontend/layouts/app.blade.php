@@ -36,7 +36,7 @@
     </style>
 </head>
 
-<body>
+<body style="background: linear-gradient(to bottom right, #99ffcc -1%, #99ffcc -1%,#ffffcc 85%)" >
     <div id="alert" class="affix-top">
         @include('frontend.includes.header')
     </div>

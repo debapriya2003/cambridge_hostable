@@ -15,15 +15,16 @@
                     <div class="header-widget">
                         <div class="single-widget">
                             <i class="fas fa-phone"></i>
-                            <h4>Call Now <span><a href="#">+91-0123456789</a></span></h4>
+                            <h4>Call Now <span><a href="#">+919954144972</a></span></h4>
                         </div>
                         <div class="single-widget">
                             <i class="fas fa-envelope"></i>
-                            <h4>Email Us<span><a href="#">xyz@gmail.com</a></span></h4>
+                            <h4>Email Us<span><a href="#">cambridgehighschoolpanchgram01@gmail.com</a></span></h4>
                         </div>
                         <div class="single-widget">
                             <i class="fas fa-map-marker-alt"></i>
-                            <h4>Our Location<span><a href="#">Kheriya Rafatpur, Aligarh,UP(India)</a></span>
+                            <h4>Our Location<span><a href="#">Panchgram Dist,Hailakandi,Assam,Pin-788802
+                            </a></span>
                             </h4>
                         </div>
                     </div>

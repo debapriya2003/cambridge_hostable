@@ -344,6 +344,10 @@
     "file": "assets/IMG_20230126_084122-0Syn91dF.jpg",
     "src": "resources/images/IMG_20230126_084122.jpg"
   },
+  "resources/images/WhatsApp Image 2024-05-08 at 11.02.31.jpeg": {
+    "file": "assets/WhatsApp Image 2024-05-08 at 11.02.31-DImz1bYc.jpeg",
+    "src": "resources/images/WhatsApp Image 2024-05-08 at 11.02.31.jpeg"
+  },
   "resources/images/cambridge_logo.png": {
     "file": "assets/cambridge_logo-D3Gdq30A.png",
     "src": "resources/images/cambridge_logo.png"
@@ -393,7 +397,7 @@
     "src": "resources/images/th.jpg"
   },
   "resources/js/app.js": {
-    "file": "assets/app-D9tUCBXb.js",
+    "file": "assets/app-CrfE1bDH.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -402,7 +406,7 @@
     ]
   },
   "resources/js/bootstrap.js": {
-    "file": "assets/bootstrap-Bd7T3UNw.js",
+    "file": "assets/bootstrap-D5BBMev6.js",
     "name": "bootstrap",
     "src": "resources/js/bootstrap.js",
     "isEntry": true,
